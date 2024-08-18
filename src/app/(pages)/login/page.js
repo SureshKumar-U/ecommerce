@@ -17,16 +17,18 @@ const Login = () => {
      if(Object.keys(error).length != 0){
         return  //restrict api call when error exist
      }
+
      const response = await fetch("/api/login",{
         method:"post",
-        body: JSON.stringify(User)
+        body: JSON.stringify(user)
      })
      const {status,message} = await response.json()
+
      if(status !== 200){
-        alert(response.message)
+        alert(message)
         return
      }
-     alert(response.message)
+     alert(message)
      setUser({email:"", password:""})
      router.push("/")
 
@@ -82,14 +84,14 @@ const Login = () => {
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                         <form className="space-y-4 md:space-y-6" action="#">
                             <div>
-                                <label for="email" className="block mb-2 text-sm font-medium">Email</label>
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium">Email</label>
                                 <input type="email" name="email" id="email" 
                                 onChange = {changeHandler}
                                 className="border border-gray-300  rounded-lg focus:border-blue-500  focus:outline-none block w-full p-2.5" />
                             </div>
                             {validationerrors?.email && <span className="text-red-500 text-xs m-0">{validationerrors.email}</span>}
                             <div>
-                                <label for="password" className="block mb-2 text-sm font-medium text-black">Password</label>
+                                <label htmlFor="password" className="block mb-2 text-sm font-medium text-black">Password</label>
                                 <input type="password" name="password" id="password" placeholder="Enter password"
                                 onChange = {changeHandler}
                                 className=" border border-gray-300  rounded-lg focus:border-blue-500  focus:outline-none block w-full p-2.5" />

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const userSchema =  mongoose.Schema({
+const userSchema = new mongoose.Schema({
     email :{
         type : String,
         unique : true,
@@ -14,5 +14,5 @@ const userSchema =  mongoose.Schema({
 
 },{timestamps: true})
 
-const userModel = mongoose.model("users", userSchema)
-module.exports = userModel
+const userModel =mongoose.models.users || mongoose.model("users", userSchema)
+export default userModel

@@ -7,7 +7,7 @@
 A modern, full-stack eCommerce shopping cart built with **Next.js** and **MongoDB**. This project utilizes **React** on the frontend and **MongoDB** as the database.
 
 ## Features
-- **User Authentication**: Secure login and signup using Iron session.
+- **User Authentication**: Secure login and signup using Jose library (state management library).
 - **Product Listing**: Display a list of products with search and filter functionalities.
 - **Shopping Cart**: Add and remove products from the cart, with real-time updates.
 <!-- - **Order Management**: Place orders and view order history. -->
