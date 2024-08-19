@@ -9,7 +9,7 @@ const CartItem = ({itemName, itemPrice}) => {
     return (
 
         <>
-            <div className="flex items-center justify-between border-b border-gray-200 py-4">
+            <div className="flex mx-auto items-center justify-between border-b border-gray-200 py-4">
                 <div className="flex items-center">
                     <Image src="/mobiles.jpg" alt="Product Image" height={24} width={24} className="w-24 h-24 object-cover rounded-md mr-4" />
                     <div>

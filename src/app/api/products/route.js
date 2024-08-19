@@ -3,6 +3,10 @@ import dbConnect from "@/config/dbconfig"
 
 
 
+
+
+
+
 export const GET = (request)=>{  //getting all products
     console.log("hello")
     dbConnect()
