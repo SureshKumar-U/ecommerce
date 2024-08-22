@@ -8,7 +8,7 @@ A modern, full-stack eCommerce shopping cart built with **Next.js** and **MongoD
 
 ## Features
 - **User Authentication**: Secure login and signup using Jose library (state management library).
-                             - **Product Listing**: Display a list of products with search and filter functionalities.
+- **Product Listing**: Display a list of products with search and filter functionalities.
 - **Shopping Cart**: Add and remove products from the cart, with real-time updates.
 <!-- - **Order Management**: Place orders and view order history. -->
 
